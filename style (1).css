@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #f9844a;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body { 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+section {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    max-width: 600px;
+}
+
+
+.game--title {
+    font-size: 60px;
+    color: #000000;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+}
+
+
+.game--subtitle {
+    font-size: 22px;
+    color: #374785;
+    margin-bottom: 5px;
+}
+
+
+.game--tagline {
+    font-size: 16px;
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
+    background: #fff;
+    color: purple;
+    border: 3px solid #f5c7a9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell:hover {
+    background-color: #fce8d5;
+    transform: scale(1.05);
+}
+
+
+.game--status {
+    font-size: 28px;
+    color: #f9844a;
+    margin: 20px auto;
+    font-weight: bold;
+    min-height: 40px;
+}
+
+
+.game--restart {
+    background-color: #ffd6a5;
+    padding: 10px 25px;
+    font-size: 20px;
+    color: #374785;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.game--restart:hover {
+    background-color: #ffa69e;
+}
